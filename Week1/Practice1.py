@@ -12,3 +12,8 @@ for score in scores:
 
 print("總分:", total)
 print("有效筆數:", count)
+
+-------------------------------
+
+總分: 300
+有效筆數: 4
