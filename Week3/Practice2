@@ -1,0 +1,23 @@
+import requests
+import logging
+import os
+
+url = "https://www.scrapethissite.com/pages/forms/"
+resp = requests.get(url)
+
+FMT = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+LOG_FILE = os.path.join(os.getcwd(), "w03.log")
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format=FMT,
+    handlers=[
+        logging.FileHandler(LOG_FILE, encoding="utf-8"),
+        logging.StreamHandler(),
+    ],
+    force=True
+)
+
+logger = logging.getLogger("w03")
+
+logger.info("狀態碼 = %s", resp.status_code)
