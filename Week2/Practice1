@@ -1,0 +1,41 @@
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+url = "https://www.scrapethissite.com/pages/forms/"
+
+# 取得網頁
+response = requests.get(url)
+
+# 解析 HTML
+soup = BeautifulSoup(response.text, "html.parser")
+
+# 找到所有球隊資料
+rows = soup.select("tr.team")
+
+data = []
+
+for row in rows:
+    data.append({
+        "Team Name": row.select_one("td.name").get_text(strip=True),
+        "Year": row.select_one("td.year").get_text(strip=True),
+        "Wins": row.select_one("td.wins").get_text(strip=True),
+        "Losses": row.select_one("td.losses").get_text(strip=True),
+        "OT Losses": row.select_one("td.ot-losses").get_text(strip=True),
+        "Win %": row.select_one("td.pct").get_text(strip=True),
+        "Goals For": row.select_one("td.gf").get_text(strip=True),
+        "Goals Against": row.select_one("td.ga").get_text(strip=True),
+        "Goal Difference": row.select_one("td.diff").get_text(strip=True)
+    })
+
+# 轉成 DataFrame
+df = pd.DataFrame(data)
+
+# 存成 output.csv
+df.to_csv("output.csv", index=False, encoding="utf-8-sig")
+
+print("資料筆數：", len(df))
+print("檔案名稱：output.csv
+
+
+
