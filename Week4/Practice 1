@@ -1,0 +1,128 @@
+1. 剖析伺服器回應的Response
+
+import requests
+
+url = "https://www.scrapethissite.com/pages/simple/"
+
+response = requests.get(url)
+
+print("===== Status Code =====")
+print(response.status_code)
+
+print("\n===== URL =====")
+print(response.url)
+
+print("\n===== Headers =====")
+for key, value in response.headers.items():
+    print(key, ":", value)
+
+print("\n===== Encoding =====")
+print(response.encoding)
+
+print("\n===== Content-Type =====")
+print(response.headers.get("Content-Type"))
+
+print("\n===== Response Text =====")
+print(response.text[:1000])
+
+--------------------------------------
+===== Status Code =====
+200
+
+===== URL =====
+https://www.scrapethissite.com/pages/simple/
+
+===== Headers =====
+Date : Tue, 06 Oct 2026 12:14:08 GMT
+Content-Type : text/html; charset=utf-8
+Transfer-Encoding : chunked
+Connection : keep-alive
+Nel : {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To : {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=DX4C59OnPIsMnWPGI8GdcboUnNq3xoiQOpC7Ylne1vo%3D\u0026sid=67ff5de4-ad2b-4112-9289-cf96be89efed\u0026ts=1791288847"}],"max_age":3600}
+Reporting-Endpoints : heroku-nel="https://nel.heroku.com/reports?s=DX4C59OnPIsMnWPGI8GdcboUnNq3xoiQOpC7Ylne1vo%3D&sid=67ff5de4-ad2b-4112-9289-cf96be89efed&ts=1791288847"
+Server : cloudflare
+Via : 1.1 heroku-router
+cf-cache-status : DYNAMIC
+Content-Encoding : zstd
+CF-RAY : a46495825f7623fc-LAX
+alt-svc : h3=":443"; ma=86400
+
+===== Encoding =====
+utf-8
+
+===== Content-Type =====
+text/html; charset=utf-8
+
+===== Response Text =====
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Countries of the World: A Simple Example | Scrape This Site | A public sandbox for learning web scraping</title>
+    <link rel="icon" type="image/png" href="/static/images/scraper-icon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A single page that lists information about all the countries in the world. Good for those just get started with web scraping.">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+
+-------------------------------------------------
+3. 轉成DataFrame
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# 網址
+url = "https://www.scrapethissite.com/pages/simple/"
+
+# 取得網頁
+response = requests.get(url)
+
+# 解析 HTML
+soup = BeautifulSoup(response.text, "html.parser")
+
+# 找到所有國家
+countries = soup.find_all("div", class_="country")
+
+# 儲存台灣資料
+data = []
+
+for country in countries:
+
+    # 國家名稱
+    name = country.find(
+        "h3",
+        class_="country-name"
+    ).get_text(strip=True)
+
+    # 只處理 Taiwan
+    if name == "Taiwan":
+
+        capital = country.find(
+            "span",
+            class_="country-capital"
+        ).get_text(strip=True)
+
+        population = country.find(
+            "span",
+            class_="country-population"
+        ).get_text(strip=True)
+
+        area = country.find(
+            "span",
+            class_="country-area"
+        ).get_text(strip=True)
+
+        data.append({
+            "Country": name,
+            "Capital": capital,
+            "Population": population,
+            "Area": area
+        })
+
+  Country	Capital	Population	Area
+0	Taiwan	Taipei	22894384	 35980.0
+
