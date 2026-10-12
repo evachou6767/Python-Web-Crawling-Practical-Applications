@@ -1,0 +1,87 @@
+2026-10-08 21:33:31,712 - INFO - 開始爬取冰球隊伍統計資料
+2026-10-08 21:33:31,712 - INFO - 開始爬取第 1 頁：https://www.scrapethissite.com/pages/forms/
+2026-10-08 21:33:33,202 - INFO - 第 1 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:33,202 - INFO - 開始爬取第 2 頁：https://www.scrapethissite.com/pages/forms/?page_num=2
+2026-10-08 21:33:34,274 - INFO - 第 2 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:34,274 - INFO - 開始爬取第 3 頁：https://www.scrapethissite.com/pages/forms/?page_num=3
+2026-10-08 21:33:35,871 - INFO - 第 3 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:35,871 - INFO - 開始爬取第 4 頁：https://www.scrapethissite.com/pages/forms/?page_num=4
+2026-10-08 21:33:36,972 - INFO - 第 4 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:36,972 - INFO - 開始爬取第 5 頁：https://www.scrapethissite.com/pages/forms/?page_num=5
+2026-10-08 21:33:38,023 - INFO - 第 5 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:38,023 - INFO - 開始爬取第 6 頁：https://www.scrapethissite.com/pages/forms/?page_num=6
+2026-10-08 21:33:39,042 - INFO - 第 6 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:39,042 - INFO - 開始爬取第 7 頁：https://www.scrapethissite.com/pages/forms/?page_num=7
+2026-10-08 21:33:40,048 - INFO - 第 7 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:40,048 - INFO - 開始爬取第 8 頁：https://www.scrapethissite.com/pages/forms/?page_num=8
+2026-10-08 21:33:41,095 - INFO - 第 8 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:41,095 - INFO - 開始爬取第 9 頁：https://www.scrapethissite.com/pages/forms/?page_num=9
+2026-10-08 21:33:42,159 - INFO - 第 9 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:42,159 - INFO - 開始爬取第 10 頁：https://www.scrapethissite.com/pages/forms/?page_num=10
+2026-10-08 21:33:43,261 - INFO - 第 10 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:43,261 - INFO - 開始爬取第 11 頁：https://www.scrapethissite.com/pages/forms/?page_num=11
+2026-10-08 21:33:44,352 - INFO - 第 11 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:44,353 - INFO - 開始爬取第 12 頁：https://www.scrapethissite.com/pages/forms/?page_num=12
+2026-10-08 21:33:45,203 - INFO - 第 12 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:45,203 - INFO - 開始爬取第 13 頁：https://www.scrapethissite.com/pages/forms/?page_num=13
+2026-10-08 21:33:46,295 - INFO - 第 13 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:46,295 - INFO - 開始爬取第 14 頁：https://www.scrapethissite.com/pages/forms/?page_num=14
+2026-10-08 21:33:47,359 - INFO - 第 14 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:47,359 - INFO - 開始爬取第 15 頁：https://www.scrapethissite.com/pages/forms/?page_num=15
+2026-10-08 21:33:48,410 - INFO - 第 15 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:48,410 - INFO - 開始爬取第 16 頁：https://www.scrapethissite.com/pages/forms/?page_num=16
+2026-10-08 21:33:49,751 - INFO - 第 16 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:49,751 - INFO - 開始爬取第 17 頁：https://www.scrapethissite.com/pages/forms/?page_num=17
+2026-10-08 21:33:50,907 - INFO - 第 17 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:50,907 - INFO - 開始爬取第 18 頁：https://www.scrapethissite.com/pages/forms/?page_num=18
+2026-10-08 21:33:52,011 - INFO - 第 18 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:52,011 - INFO - 開始爬取第 19 頁：https://www.scrapethissite.com/pages/forms/?page_num=19
+2026-10-08 21:33:53,090 - INFO - 第 19 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:53,090 - INFO - 開始爬取第 20 頁：https://www.scrapethissite.com/pages/forms/?page_num=20
+2026-10-08 21:33:54,275 - INFO - 第 20 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:54,275 - INFO - 開始爬取第 21 頁：https://www.scrapethissite.com/pages/forms/?page_num=21
+2026-10-08 21:33:55,285 - INFO - 第 21 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:55,285 - INFO - 開始爬取第 22 頁：https://www.scrapethissite.com/pages/forms/?page_num=22
+2026-10-08 21:33:56,518 - INFO - 第 22 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:56,518 - INFO - 開始爬取第 23 頁：https://www.scrapethissite.com/pages/forms/?page_num=23
+2026-10-08 21:33:57,442 - INFO - 第 23 頁爬取成功，共 25 筆資料
+2026-10-08 21:33:57,442 - INFO - 開始爬取第 24 頁：https://www.scrapethissite.com/pages/forms/?page_num=24
+2026-10-08 21:33:58,209 - INFO - 第 24 頁爬取成功，共 7 筆資料
+2026-10-08 21:33:58,211 - INFO - 所有頁面合併完成，共 582 筆資料
+2026-10-08 21:33:58,269 - INFO - output.csv 建立成功
+2026-10-08 21:39:03,692 [INFO] w03: 開始爬取 Scrape This Site 冰球隊伍統計表
+2026-10-08 21:39:03,695 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.scrapethissite.com:443
+2026-10-08 21:39:04,386 [DEBUG] urllib3.connectionpool: https://www.scrapethissite.com:443 "GET /pages/forms/ HTTP/1.1" 200 None
+2026-10-08 21:39:04,821 [INFO] w03: 狀態碼 = 200
+2026-10-08 21:39:04,821 [INFO] w03: 網頁取得成功
+2026-10-08 21:39:04,840 [INFO] w03: HTML 表格數量 = 1
+2026-10-08 21:39:04,840 [INFO] w03: 原始資料筆數 = 25
+2026-10-08 21:39:04,841 [INFO] w03: 實際取出資料筆數 = 25
+2026-10-08 21:39:04,841 [DEBUG] w03: 取得的資料：
+                Team Name  Year  Wins  Losses  OT Losses  Win %  Goals For (GF)  Goals Against (GA)  + / -
+0           Boston Bruins  1990    44      24        NaN  0.550             299                 264     35
+1          Buffalo Sabres  1990    31      30        NaN  0.388             292                 278     14
+2          Calgary Flames  1990    46      26        NaN  0.575             344                 263     81
+3      Chicago Blackhawks  1990    49      23        NaN  0.613             284                 211     73
+4       Detroit Red Wings  1990    34      38        NaN  0.425             273                 298    -25
+5         Edmonton Oilers  1990    37      37        NaN  0.463             272                 272      0
+6        Hartford Whalers  1990    31      38        NaN  0.388             238                 276    -38
+7       Los Angeles Kings  1990    46      24        NaN  0.575             340                 254     86
+8   Minnesota North Stars  1990    27      39        NaN  0.338             256                 266    -10
+9      Montreal Canadiens  1990    39      30        NaN  0.487             273                 249     24
+10      New Jersey Devils  1990    32      33        NaN  0.400             272                 264      8
+11     New York Islanders  1990    25      45        NaN  0.312             223                 290    -67
+12       New York Rangers  1990    36      31        NaN  0.450             297                 265     32
+13    Philadelphia Flyers  1990    33      37        NaN  0.412             252                 267    -15
+14    Pittsburgh Penguins  1990    41      33        NaN  0.512             342                 305     37
+15       Quebec Nordiques  1990    16      50        NaN  0.200             236                 354   -118
+16        St. Louis Blues  1990    47      22        NaN  0.588             310                 250     60
+17    Toronto Maple Leafs  1990    23      46        NaN  0.287             241                 318    -77
+18      Vancouver Canucks  1990    28      43        NaN  0.350             243                 315    -72
+19    Washington Capitals  1990    37      36        NaN  0.463             258                 258      0
+20          Winnipeg Jets  1990    26      43        NaN  0.325             260                 288    -28
+21          Boston Bruins  1991    36      32        NaN  0.450             270                 275     -5
+22         Buffalo Sabres  1991    31      37        NaN  0.388             289                 299    -10
+23         Calgary Flames  1991    31      37        NaN  0.388             296                 305     -9
+24     Chicago Blackhawks  1991    36      29        NaN  0.450             257                 236     21
+2026-10-08 21:39:04,860 [INFO] w03: CSV 儲存成功：D:\Python_Course_Demo\output.csv
