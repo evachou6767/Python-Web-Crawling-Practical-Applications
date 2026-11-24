@@ -1,0 +1,29 @@
+============================================================
+Week 06 Exercise 10
+Quotes SQLite Database 查詢結果
+============================================================
+
+Q1：名言總數及作家人數
+名言總數：100 句
+作家總數：50 位
+
+Q2：Albert Einstein 的名言
+Albert Einstein 共 10 句名言
+前 3 句名言：
+1. “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”
+2. “There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”
+3. “Try not to become a man of success. Rather become a man of value.”
+
+Q3：名言數量最多的前 5 位作家
+1. Albert Einstein：10 句
+2. J.K. Rowling：9 句
+3. Marilyn Monroe：7 句
+4. Dr. Seuss：6 句
+5. Mark Twain：6 句
+
+Q4：Tag 含有 love 的名言數量
+Tag 含有 love 的名言共 15 句
+
+============================================================
+查詢完成！
+============================================================
